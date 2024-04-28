@@ -21,7 +21,7 @@ export default {
         "Be yourself; everyone else is already taken. -Wilde",
         "A room without books is like a body without a soul. -Cicero",
         "You only live once, but if you do it right, once is enough. -Mae West",
-        "Don’t walk in front of me… I may not follow Don’t walk behind me… I may not lead Walk beside me… just be my friend -Camus",
+        "Don't walk in front of me. I may not follow Don't walk behind me. I may not lead Walk beside me. just be my friend -Camus",
         "No one can make you feel inferior without your consent. -Eleanor Roosevelt",
         "If you tell the truth, you don't have to remember anything. -Twain",
         "To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment. -Emerson",
@@ -32,7 +32,7 @@ export default {
         "It is the hallmark of any deep truth that its negation is also a deep truth. -Niels Bohr",
         "The only way to deal with the future is to function efficiently now. -Robert Heinlein",
         "Knowing was a barrier which prevented learning. -Frank Herbert",
-        "Don’t drum up the men to gather wood, divide the work, and give orders. Instead, teach them to yearn for the vast and endless sea. -de Saint-Exupéry",
+        "Don't drum up the men to gather wood, divide the work, and give orders. Instead, teach them to yearn for the vast and endless sea. -de Saint-Exupéry",
         "He who has injured thee was either stronger or weaker than thee. If weaker, spare him; if stronger, spare thyself. -Seneca",
        ]
     };

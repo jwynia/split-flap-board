@@ -2,6 +2,9 @@
   <div class="flip-card-container">
     <SplitFlap v-for="(t, i) in letters" :key="i" :text="t" :index="maxLength - i" :mode="mode" />
   </div>
+  <div>
+    {{  maxCardsPerRow }}
+  </div>
 </template>
 
 <script>
@@ -27,6 +30,8 @@ export default {
     }
   },
   computed: {
+    screenWidth: () => window.innerWidth,
+    maxCardsPerRow: () => Math.floor((window.innerWidth * .9 )/ 60),
     letters() {
       const words = (this.value || "").split(" ");
       const lines = [];
@@ -34,18 +39,18 @@ export default {
 
       for (let i = 0; i < words.length; i++) {
         const word = words[i];
-        if (currentLine.length + word.length + 1 <= 25) {
+        if (currentLine.length + word.length < this.maxCardsPerRow) {
           currentLine += (currentLine ? " " : "") + word;
         } else {
-          lines.push(currentLine.padEnd(25, " "));
+          lines.push(currentLine.padEnd(this.maxCardsPerRow, " "));
           currentLine = word;
         }
       }
 
-      lines.push(currentLine.padEnd(25, " "));
+      lines.push(currentLine.padEnd(this.maxCardsPerRow, " "));
 
       while (lines.length < 6) {
-        lines.push(" ".repeat(25));
+        lines.push(" ".repeat(this.maxCardsPerRow));
       }
 
       return lines.join("").split("");
