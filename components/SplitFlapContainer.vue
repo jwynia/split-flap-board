@@ -2,9 +2,6 @@
   <div class="flip-card-container">
     <SplitFlap v-for="(t, i) in letters" :key="i" :text="t" :index="maxLength - i" :mode="mode" />
   </div>
-  <div>
-    {{  maxCardsPerRow }}
-  </div>
 </template>
 
 <script>
